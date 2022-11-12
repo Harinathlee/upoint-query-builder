@@ -1,0 +1,91 @@
+/*Preiviewdata page styles*/
+.whole-container {
+  border-radius: 10px;
+}
+.previewData-container {
+  text-align: left;
+  padding: 20px;
+  background-color: #e9e9eb;
+  width: 95%;
+  height: auto;
+  max-height: 80%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  overflow: scroll;
+  color: #010a14;
+  border-radius: 10px;
+  box-shadow: 0 0 6px #cbcbcc, 0 0 4px #bbb9b9;
+}
+::-webkit-scrollbar {
+  // Width of vertical scroll bar
+  width: 10px;
+  // Height of horizontal scroll bar
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #114b8d;
+}
+hr {
+  color: #8d1126;
+}
+table {
+  width: 100%;
+  margin: 0;
+  padding: 0%;
+  border-collapse: collapse;
+}
+thead {
+  background-color: #114b8d;
+  color: #e9e9eb;
+}
+table,
+thead,
+tbody,
+th,
+td,
+tr {
+  border: 2px solid rgb(17, 14, 14);
+  border-collapse: collapse;
+}
+.gen-btn {
+  font-weight: bold;
+}
+.missedErrorMsg {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+// view query styles
+.copy-btn {
+  width: 100px;
+  height: auto;
+  text-align: center;
+  font-size: medium;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+.copy-btn:hover,
+.gen-btn:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.Footer-Div {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, -0%);
+  text-align: center;
+  padding: 20px;
+}
+.gen-fin-btn {
+  padding: 7px;
+  background-color: rgb(20, 148, 52);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
