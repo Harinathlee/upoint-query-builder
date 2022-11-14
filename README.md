@@ -6,14 +6,14 @@ So here is my solution that solves most of the concerns by replicating the SQL q
 
 
 ## Features
-- Good an nice looking UI.
+
 - This is PWA (preogressive web app) tool which will work as a website and also can be easily installed as a web app in seconds by one click.
 - This can also be used without internet. 
 - It makes our team work easier.
 - This our team to concentrate on more exciting tasks.
 - This eradicates the probability that you'll make errors, which is highly probable when performing it manually.
 - Keeps track of who and for whom queries are produced, which will come in handy if there are any issues about those changes in the future.
-
+- Good and nice looking UI.
 
 
 ## 🔗 Links
