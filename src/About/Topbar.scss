@@ -1,11 +1,12 @@
 /* importing required google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Courgette&display=swap");
 .main-title {
-  font-family: 'Berkshire Swash', cursive;
-  background: #E96E49;
-background: repeating-linear-gradient(to right, #E96E49 0%, #49F366 78%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  font-family: "Berkshire Swash", cursive;
+  background: #e96e49;
+  background: repeating-linear-gradient(to right, #e96e49 0%, #49f366 78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding-top: 5px;
   margin-left: 3rem;
   text-shadow: #dde0de;
@@ -18,21 +19,22 @@ ul {
   position: absolute;
   right: 4rem;
 }
-p {
+link-names {
   padding: 1rem;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: white;
 }
-p:hover {
+link-names:hover {
   background-clip: text;
-  background: #E96E49;
-  background: repeating-linear-gradient(to right, #E96E49 0%, #49F366 78%);
+  background: #e96e49;
+  background: repeating-linear-gradient(to right, #e96e49 0%, #49f366 78%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
 
-.logo{
+.logo {
   width: 40px;
   margin-right: 15px;
 }
