@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-
 import * as XLSX from "xlsx";
 import { useNavigate } from "react-router-dom";
 import "./App.scss";
 import { GenerateCompleteData } from "./CompleteData/GenerateCompeletData";
 import { HelmetProvider, Helmet } from "react-helmet-async";
+import TopBar from "./About/TopBar";
 
 export default function App() {
   //for navigating to another page
@@ -19,6 +19,7 @@ export default function App() {
 
   //set queryType as Insert/Update
   const onQueryTypeChange = (e) => {
+    document.getElementsByName("queryType").checked = false;
     if(e.target.value==='Insert'){
       setShowLinkRadio(true);
     }
@@ -44,11 +45,14 @@ export default function App() {
       if (queryType.selectedOption === "Insert") {
         show_asset_group_ID(true);
         show_Sequence_Num(true);
+        document.getElementById("container").classList.add("more-margin");
       } else {
         show_asset_group_ID(true);
         show_Sequence_Num(false);
+        document.getElementById("container").classList.add("more-margin");
       }
     } else {
+      document.getElementById("container").classList.remove("more-margin");
       show_asset_group_ID(false);
       show_Sequence_Num(false);
       if (e.target.value === "TEXT") {
@@ -105,6 +109,7 @@ export default function App() {
           document.getElementById("asset_groupID").value
         );
       }
+      document.getElementById("container").style.marginBlockStart = '4rem';
     }
     GenerateCompleteData(queryType, tablename, email);
     navigate("/PreviewData", { replace: true });
@@ -112,8 +117,13 @@ export default function App() {
 
   //HTML page code of homepage
   return (
+    <>
+    <TopBar />
+      <br />
+   
     <HelmetProvider>
-      <div className="main-container">
+      
+      <div className="main-container" id="container">
         <Helmet>
           <title>Upoint Query Replicator</title>
           <meta
@@ -269,5 +279,6 @@ export default function App() {
         </form>
       </div>
     </HelmetProvider>
+    </>
   );
 }
