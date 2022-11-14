@@ -7,6 +7,9 @@ body {
   background-color: #010a14;
 }
 .main-container {
+  resize: vertical;
+  overflow: auto;
+  margin-top: 1rem;
   width: 40%;
   height: auto;
   position: absolute;
@@ -18,6 +21,10 @@ body {
   border-radius: 15px;
   background-color: #e9e9eb;
   box-shadow: 0 0 6px #cbcbcc, 0 0 4px #a0a0a0;
+  overflow: hidden;
+}
+.more-margin{
+  margin-top: 5rem;
 }
 .input-label {
   font-weight: 700;
@@ -42,4 +49,12 @@ body {
 .errorMsg {
   color: #c12020;
   font-weight: bold;
+}
+
+.topbar{
+  float: right;
+  margin-right: 4rem;
+}
+.links{
+  margin-right: 3rem;
 }
