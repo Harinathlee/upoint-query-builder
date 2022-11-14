@@ -78,7 +78,7 @@ This project is used by the following companies:
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/Harinathlee/upoint-query-builder/blob/master/public/Screenshot%20from%202022-11-14%2022-09-44.png)
 
 
 ![Logo](https://github.com/Harinathlee/upoint-query-builder/blob/master/public/logo192.png)
