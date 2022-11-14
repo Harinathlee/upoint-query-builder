@@ -81,7 +81,7 @@ This project is used by the following companies:
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://github.com/Harinathlee/upoint-query-builder/blob/master/public/logo192.png)
 
 
 ## Learn More
