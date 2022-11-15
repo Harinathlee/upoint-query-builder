@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Topbar.scss';
-import logo from "../logo192.png"
+import logo from "../Documents/logo192.png"
 const TopBar = () => {
   return (
     <div className="nav-main">
@@ -12,13 +12,13 @@ const TopBar = () => {
         </a>
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <Link to="/AboutMe" classNameName="">
-              <p>AboutMe</p>
+            <Link to="/About" className="">
+              <p className="link_name">AboutMe</p>
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Tutorial" classNameName="">
-              <p>Tutorial</p>
+            <Link to="/Tutorial" className="">
+              <p className="link_name">Tutorial</p>
             </Link>
           </li>
         </ul>
