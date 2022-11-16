@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Topbar.scss";
-import logo from "../logo192.png";
+import logo from "../Documents/logo192.png";
 const TopBar = () => {
   return (
     <div className="nav-main">
@@ -11,20 +10,27 @@ const TopBar = () => {
           href="https://github.com/Harinathlee/upoint-query-builder"
         >
           <h2 className="main-title">
+            {" "}
             <img src={logo} alt="logo" className="logo"></img>
             Upoint-Query-Replicator
           </h2>
         </a>
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <Link to="/AboutMe" classNameName="">
-              <p className="link-names">AboutMe</p>
-            </Link>
+            <a
+              className="link-names"
+              href="https://github.com/Harinathlee/upoint-query-builder/blob/master/README.md"
+            >
+              AboutMe
+            </a>
           </li>
           <li className="nav-item">
-            <Link to="/Tutorial" classNameName="">
-              <p className="link-names">Tutorial</p>
-            </Link>
+            <a
+              className="link-names"
+              href="https://github.com/Harinathlee/upoint-query-builder/blob/678f35bb8f91dcfab4d33a01082a66a85871846b/src/Documents/tutorial.pdf"
+            >
+              Tutorial
+            </a>
           </li>
         </ul>
       </nav>
