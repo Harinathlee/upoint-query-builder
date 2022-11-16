@@ -43,8 +43,7 @@ export default function ViewSelectQuery() {
   //html page template
   return (
     <HelmetProvider>
-      <div className="whole-container">
-        <div className="previewData-container">
+      <div className="previewData-container"> 
           <Helmet>
             <title>Check-Duplicates</title>
             <meta name="description" content="App Description" />
@@ -83,7 +82,6 @@ export default function ViewSelectQuery() {
             onClick={handleOnClick}
           />
         </div>
-      </div>
     </HelmetProvider>
   );
 }
