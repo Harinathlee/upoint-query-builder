@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import './Topbar.scss';
 import logo from "../Documents/logo192.png"
 const TopBar = () => {
@@ -12,14 +11,14 @@ const TopBar = () => {
         </a>
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <Link to="/About" className="">
+            <a href="https://github.com/Harinathlee/upoint-query-builder/blob/master/README.md" className="">
               <p className="link_name">AboutMe</p>
-            </Link>
+            </a>
           </li>
           <li className="nav-item">
-            <Link to="/Tutorial" className="">
+            <a href="https://github.com/Harinathlee/upoint-query-builder/blob/678f35bb8f91dcfab4d33a01082a66a85871846b/src/Documents/tutorial.pdf" className="">
               <p className="link_name">Tutorial</p>
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

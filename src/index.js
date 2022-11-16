@@ -8,9 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
-//about pages
-import About from "./About/About";
-import Tutorial from "./About/Tutorial";
+
 //using lazy loading to load components when they are needed to increase performance
 const PreviewData = React.lazy(()=> import ('./CompleteData/PreviewData')) ;
 const ViewSelectQuery = React.lazy(()=> import('./CheckDuplicates/ViewSelectQuery'));
@@ -18,22 +16,16 @@ const ViewFinalQueries = React.lazy(()=>import('./FinalQueries/ViewFinalQueries'
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 root.render(
- 
-
     <BrowserRouter>
      <Suspense fallback={<div className="loading">Loading...</div>}>
       <Routes>
         <Route index element={<App />} />
-        <Route path="AboutMe" element={<About />} />
-        <Route path="Tutorial" element={<Tutorial />} />
         <Route path="PreviewData" element={<PreviewData />} />
         <Route path="ViewSelectQuery" element={<ViewSelectQuery />} />
         <Route path="ViewFinalQueries" element={<ViewFinalQueries />} />
       </Routes>
       </Suspense>
     </BrowserRouter>
- 
- 
 );
 
 // If you want your app to work offline and load faster, you can change
