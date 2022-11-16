@@ -10,7 +10,6 @@ const TopBar = () => {
           href="https://github.com/Harinathlee/upoint-query-builder"
         >
           <h2 className="main-title">
-            {" "}
             <img src={logo} alt="logo" className="logo"></img>
             Upoint-Query-Replicator
           </h2>
