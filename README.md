@@ -57,7 +57,7 @@ src
 
 ## Documentation
 
-[Documentation](https://linktodocumentation)
+[Documentation](https://github.com/Harinathlee/upoint-query-builder/blob/master/src/Documents/2018hw70092_Harinath_dissertation_Final_report.pdf)
 
 
 ## Deployment
