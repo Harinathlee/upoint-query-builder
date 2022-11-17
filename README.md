@@ -109,11 +109,10 @@ This project is used by the following companies:
 ![App Screenshot](https://github.com/Harinathlee/upoint-query-builder/blob/master/public/Screenshot%20from%202022-11-14%2022-09-44.png)
 
 
-<<<<<<< HEAD
+
 ![Logo](https://github.com/Harinathlee/upoint-query-builder/blob/master/src/Documents/logo192.png)
-=======
-![Logo](https://github.com/Harinathlee/upoint-query-builder/blob/master/src/logo192.png)
->>>>>>> master
+
+
 
 
 ## Learn More
@@ -131,8 +130,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Making a Progressive Web App
 
-<<<<<<< HEAD
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-=======
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
->>>>>>> master
+
