@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "markdown-notes-tree": "^1.12.0",
     "netlify-cli": "^12.2.0"
   }
 }

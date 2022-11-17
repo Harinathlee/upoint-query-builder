@@ -15,7 +15,35 @@ So here is my solution that solves most of the concerns by replicating the SQL q
 - Keeps track of who and for whom queries are produced, which will come in handy if there are any issues about those changes in the future.
 - Good and nice looking UI.
 
-
+## Repository Structure
+```
+src
+├── About
+│   ├── TopBar.jsx
+│   └── Topbar.scss
+├── App.jsx
+├── App.scss
+├── CheckDuplicates
+│   ├── GenerateSelectQuery.jsx
+│   └── ViewSelectQuery.jsx
+├── CompleteData
+│   ├── GenerateCompeletData.jsx
+│   └── PreviewData.jsx
+├── Documents
+│   ├── logo192.png
+│   └── tutorial.pdf
+├── FinalQueries
+│   ├── GenerateFinalQueries.jsx
+│   ├── GenerateInsertQueries.jsx
+│   ├── GenerateUpdateQueries.jsx
+│   └── ViewFinalQueries.jsx
+├── index.css
+├── index.js
+├── reportWebVitals.js
+├── service-worker.js
+├── serviceWorkerRegistration.js
+└── styles.scss
+```
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harinath-g/)
