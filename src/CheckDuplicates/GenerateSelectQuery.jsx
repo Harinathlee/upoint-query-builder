@@ -12,9 +12,9 @@ export function GenerateSelectQuery(tableName) {
   }
   for (let index = 0; index < data.length; index++) {
     const element = data[index];
-    console.log('elemt' + element);
+    //console.log('elemt' + element);
     let value = element[colname];
-    console.log(value);
+    //console.log(value);
     if (index !== data.length - 1) {
       values = values + "'" + value + "' ,";
     } else {
@@ -22,7 +22,7 @@ export function GenerateSelectQuery(tableName) {
     }
   }
   let selectQuery =
-    'Select * from ' + tableName + ' where ' + colname + ' in (' + values + ')';
+    'Select * from CL0150GTU_BASE.' + tableName + ' where ' + colname + ' in (' + values + ')';
   if (tableName.includes('TX')) {
     selectQuery = selectQuery + "and LCLE_CD= 'en_US';";
   } else if (tableName.includes('ASSET')) {

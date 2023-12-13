@@ -4,7 +4,7 @@ export function GenerateInsertQueries(
   finalQuery,
   finalQueries
 ) {
-  console.log("tablename"+tableName)
+  //console.log("tablename"+tableName)
   //finalQueries = JSON.parse(localStorage.getItem('finalQueries'));
   let columns = '';
   let values = '';
@@ -17,14 +17,20 @@ export function GenerateInsertQueries(
     for (let i = 1; i < columnNames.length; i++) {
       const colname = columnNames[i];
       const value = element[colname];
-      columns = columns + colname + ',';
-      if (
+     if(colname.includes('LST_UPD') && tableName.includes('ASSET') ){
+      columns = columns;
+      values = values;
+     }
+      
+      else if (
         typeof value == 'number' ||
         (typeof value == 'string' && colname.includes('DT')) ||
         value === 'null'
       ) {
+        columns = columns + colname + ',';
         values = values + value + ',';
-      } else {
+      }else {
+        columns = columns + colname + ',';
         values = values + "'" + value + "',";
       }
     }

@@ -135,6 +135,7 @@ export function GenerateCompleteData(queryType, tablename, email) {
   }
   //data for insert queries
   function generateInsertData(defaultData) {
+    console.log("Default data"+JSON.stringify(defaultData));
     let columnNames = Object.keys(defaultData);
     let defaultValues = Object.values(defaultData);
     let col_num = 1;
@@ -177,6 +178,7 @@ export function GenerateCompleteData(queryType, tablename, email) {
       completeData.push(obj);
       obj = {};
     }
+    console.log("Complete data"+JSON.stringify(completeData));
   }
 
   //data for LRS attributes table for type of update in LINK
@@ -226,7 +228,6 @@ export function GenerateCompleteData(queryType, tablename, email) {
       data['LINK_ID'] = cdata['LINK_ID'];
       data['ATTRIBUTE_SQ'] = defaultData['ATTRIBUTE_SQ'];
       data['ATTRIBUTE_ID'] = lrsdata['ATTRIBUTE_ID'];
-      console.log('data' + data);
       linkAttributeData.push(data);
       data = {};
     }
